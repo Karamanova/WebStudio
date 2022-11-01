@@ -1,0 +1,35 @@
+.testimonials {
+    padding-top: 94px;
+}
+.testimonials__list {
+    display: flex;
+}
+.testionials.item {
+    @include font (14px, 400, 1.71, 0.03em);
+    color: $contacts-list-color;
+    align-items: center;
+}
+.testimonials__item:not(:last-child) {
+    margin-right: 30px;
+}
+.testimonials__block {
+    background-color: $about-team-background-color;
+    @extend %flex;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+.testimonials__icons {
+    align-items: center;
+}
+.testimonials__text {
+    @include font (14px, 700, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: $title-color;
+    margin: 0 0 10px 0;
+}
+.testimonials__description {
+    @include halffont (14px, 1.71, 0.03em);
+    color: $contacts-list-color;
+    width: 270px;
+}
