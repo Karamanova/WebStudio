@@ -15,7 +15,7 @@
             max-width: 768px;
         }
     @media screen and (min-width:$desktop) {
-            padding: 200px 0;
+            max-width: 1600px;
         }
 }
 
@@ -66,26 +66,6 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
     @media screen and (min-width:$desktop) {
             @include font (44px, 900, 1.36, 0.06em);
-            max-width: 696px;
+            width: 696px;
         }
-}
-.hero-btn {
-    @include font (16px, 700, 1.88, 0.06em);
-    @extend %half-buttons;
-    padding: 10px 24px;
-    background-color: $hero-button-background-color;
-    color: $primary-color;
-    border-radius: 4px;
-    border-color: transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-    &:hover,
-    &:focus {
-        background-color: $accent-color;
-        color: $primary-color;
-    }
-@media screen and (min-width:$desktop) {
-    padding: 10px 32px;
-}
-
 }

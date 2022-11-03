@@ -1,36 +1,29 @@
 .footer {
     background-color: $first-background-color;
     padding: 60px 0;
-}
-
-.footer__content {
-    @media screen and (min-width:$tablet) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        }
+    text-align: center;
 
     @media screen and (min-width:$desktop) {
-        display: flex;
-        align-items: baseline;
-    }
+            text-align: left;
+        }
 }
 
 .footer__container {
     @media screen and (min-width:$tablet) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    @media screen and (min-width:$desktop) {
-        justify-content: space-between;
-        align-items: baseline;
-    }
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    
+        @media screen and (min-width:$desktop) {
+            justify-content: space-between;
+            align-items: baseline;
+        }
 }
 .footer__list {
     display: block;
 }
+
 .footer__contact {
     @include wsh (14px, 400, 1.71);
     color: $footer-contact-color;
@@ -41,12 +34,6 @@
     color: $accent-color;
 }
 }
-
-.footer__address {
-    font-style: normal;
-    margin-top: 20px;
-}
-
 .footer__link {
     @include halffont (14px, 1.71, 0.03em);
     color: $primary-color;
@@ -57,9 +44,9 @@
         color: $accent-color;
     }
 }
-.footer__item {
+.footer__item:not(:first-child) {
     margin-top: 9px;
 }
-.footer__item+.footer__item {
-    margin-top: 9px;
-}
+// .footer__item+.footer__item {
+//     margin-top: 9px;
+// }
