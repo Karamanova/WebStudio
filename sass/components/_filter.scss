@@ -1,10 +1,19 @@
-.filters-list {
+.filters__list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 34px;
+    flex-wrap: wrap;
+    margin: -8px;
+    margin-bottom: 32px;
+    
+        @media screen and (min-width:$tablet) {
+            justify-content: center;
+            align-items: center;
+        }
 }
-.filters-list__item:not(:last-child) {
-    margin-right: 8px;
+.filters__item {
+    margin: 8px;
+    &:not(:last-child) {
+            margin-right: 0px;
+        }
 }
 .filters-btn {
     @include font (16px, 500, 1.62, 0.03em);

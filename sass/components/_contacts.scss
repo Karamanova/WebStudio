@@ -1,3 +1,12 @@
+.navigation-contacts {
+    display: none;
+        margin-top: auto;
+        @media screen and (min-width:$tablet) {
+                margin-top: 0;
+                margin-left: auto;
+                display: block;
+            }
+}
 .contacts__list {
     display: flex;
     align-items: center;

@@ -1,13 +1,23 @@
 .footer-social {
-    margin-left: 70px;
+    @media screen and (max-width:767px) {
+            margin: 60px auto 0;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            margin-left: 70px;
+        }
 }
 
 .footer-social__title {
     @include halffont (14px, 1.14, 0.03em);
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     color: $primary-color;
     margin-bottom: 20px;
+    
+    @media screen and (min-width:$desktop) {
+            text-align: left;
+        }
 }
 
 .footer-social__list {

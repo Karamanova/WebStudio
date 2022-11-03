@@ -17,6 +17,10 @@
     <header class="header">
         <div class="container header__container">
     <a href="./index.html" class="header-logo header__header-logo"> <span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+    <button type="button" class="toggle-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="24"
+            height="16">
+            <use href="./images/icons.svg#icon-menu" class="icon-menu"></use>
+        </svg></button>
     <nav class="navigation">
     <ul class="navigation__list list">
         <li class="navigation__item"> <a href="./index.html" class="link-current">Студія</a></li>
@@ -24,6 +28,7 @@
         <li class="navigation__item"> <a href="">Контакти</a></li>
     </ul>
 </nav>
+<div class="navigation-contacts">
 <ul class="contacts__list list">
     <li class="contacts__item"> 
         <a href="mailto:info@devstudio.com" class="contacts__link">
@@ -44,6 +49,7 @@
         </a>
     </li>
 </ul>
+</div>
 </div>
     </header>
 <!--Герой-->
@@ -127,7 +133,16 @@
     <div class="container">
     <h2 class="team__name">Наша команда</h2>
     <ul class="team__list list">
-        <li class="team__item"> <img src="./images/team-member1.jpg" alt="Ігор Дем'яненко" width="270">
+        <li class="team__item"> 
+            <picture>
+            <source srcset="./images/desktop/teammate1.jpg 1x, ./images/desktop/teammate1@2x.jpg 2x"
+                media="(min-width:1200px)">
+            <source srcset="./images/tablet/teammate1.jpg 1x, ./images/tablet/teammate1@2x.jpg 2x"
+                media="(min-width:768px)">
+            <source srcset="./images/mobile/teammate1.jpg 1x, ./images/mobile/teammate1@2x.jpg 2x"
+                media="(min-width:320px)">
+            <img class="team__img" src="./images/mobile/product_designer.jpg" alt="Ігор Дем'яненко" width="">
+        </picture>
             <div class="team__description">
             <h3 class="team__names">Ігор Дем'яненко</h3>
         <p lang="en" class="team__jobs">Product Designer</p>
@@ -163,7 +178,16 @@
         </ul>
     </div>
     </li>
-    <li class="team__item"> <img src="./images/team-member2.jpg" alt="Ольга Рєпіна" width="270">
+    <li class="team__item"> 
+        <picture>
+            <source srcset="./images/desktop/teammate2.jpg 1x, ./images/desktop/teammate2@2x.jpg 2x"
+                media="(min-width:1200px)">
+            <source srcset="./images/tablet/teammate2.jpg 1x, ./images/tablet/teammate2@2x.jpg 2x"
+                media="(min-width:768px)">
+            <source srcset="./images/mobile/teammate2.jpg 1x, ./images/mobile/teammate2@2x.jpg 2x"
+                media="(min-width:320px)">
+            <img class="team__img" src="./images/mobile/product_designer.jpg" alt="Ольга Рєпіна" width="">
+        </picture>
         <div class="team__description">
         <h3 class="team__names">Ольга Рєпіна</h3>
     <p lang="en" class="team__jobs">Frontend Developer</p>
@@ -199,7 +223,13 @@
     </ul>
 </div>
 </li>
-    <li class="team__item"><img src="./images/team-member3.jpg" alt="Микола Тарасов" width="270">
+    <li class="team__item">
+        <picture>
+            <source srcset="./images/desktop/teammate3.jpg 1x, ./images/desktop/teammate3@2x.jpg 2x" media="(min-width:1200px)">
+            <source srcset="./images/tablet/teammate3.jpg 1x, ./images/tablet/teammate3@2x.jpg 2x" media="(min-width:768px)">
+            <source srcset="./images/mobile/teammate3.jpg 1x, ./images/mobile/teammate3@2x.jpg 2x" media="(min-width:320px)">
+            <img class="team__img" src="./images/mobile/product_designer.jpg" alt="Микола Тарасов" width="">
+        </picture>
         <div class="team__description">
         <h3 class="team__names">Микола Тарасов</h3>
     <p lang="en" class="team__jobs">Marketing</p>
@@ -235,7 +265,13 @@
     </ul>
 </div>
 </li>
-    <li class="team__item"><img src="./images/team-member4.jpg" alt="Михайло Єрмаков" width="270">
+    <li class="team__item">
+        <picture>
+            <source srcset="./images/desktop/teammate4.jpg 1x, ./images/desktop/teammate4@2x.jpg 2x" media="(min-width:1200px)">
+            <source srcset="./images/tablet/teammate4.jpg 1x, ./images/tablet/teammate4@2x.jpg 2x" media="(min-width:768px)">
+            <source srcset="./images/mobile/teammate4.jpg 1x, ./images/mobile/teammate4@2x.jpg 2x" media="(min-width:320px)">
+            <img class="team__img" src="./images/mobile/product_designer.jpg" alt="Михайло Єрмаков" width="">
+        </picture>
         <div class="team__description">
         <h3 class="team__names">Михайло Єрмаков</h3>
     <p lang="en" class="team__jobs">UI Designer</p>
@@ -393,6 +429,47 @@
         </div>
         </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="toggle-menu js-close-menu" aria-expanded="false" aria-controls="mobile-menu"><svg
+                width="24" height="16">
+                <use href="./images/icons.svg#icon-close" class="icon-close"></use>
+            </svg></button>
+        <div class="menu-content">
+            <div class="menu-nav">
+                <nav>
+                    <ul class="mobile-nav list">
+                        <li class="mobile-nav__item"><a href="./index.html"
+                                class="mobile-nav__link mobile-nav__link--current link">Студия</a></li>
+                        <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link link">Портфолио</a>
+                        </li>
+                        <li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="menu-contacts">
+                <ul class="contacts-list list">
+                    <li class="contacts-list__item">
+                        <a href="tel:+380961111111"
+                            class="contacts-list__link contacts-list__link--big-size link contacts__link--accent-color">+38
+                            096
+                            111 11
+                            11</a>
+                    </li>
+                    <li class="contacts-list__item">
+                        <a href="mailto:info@devstudio.com"
+                            class="contacts-list__link contacts-list__link--medium-size link">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-social list">
+                    <li class="mobile-social__item"><a href="" class="mobile-social__link">Instagram</a></li>
+                    <li class="mobile-social__item"><a href="" class="mobile-social__link">Twitter</a></li>
+                    <li class="mobile-social__item"><a href="" class="mobile-social__link">Facebook</a></li>
+                    <li class="mobile-social__item"><a href="" class="mobile-social__link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal__close" data-modal-close>
@@ -442,5 +519,9 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
     </body>
     </html>

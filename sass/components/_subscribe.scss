@@ -1,14 +1,24 @@
 .subscribe {
-    margin-left: auto;
+    @media screen and (max-width: 1199px) {
+            margin-top: 60px;
+        }
+    
+        @media screen and (min-width:$desktop) {
+            margin-left: auto;
+        }
 }
 
 .subscribe__text {
     font-size: 14px;
     line-height: 1.14;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     color: $primary-color;
     margin-bottom: 20px;
+
+    @media screen and (min-width:$desktop) {
+            text-align: left;
+        }
 }
 
 .form-subscribe {
