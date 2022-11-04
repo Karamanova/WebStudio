@@ -57,15 +57,6 @@
                      color: $accent-color;
                  }
         
-                 &link-current::after {
-                     content: "";
-                     @include sizes (100%, 4px);
-                     border-radius: 2px;
-                     position: absolute;
-                     background-color: $accent-color;
-                     left: 0;
-                     bottom: 0;
-                 }
         
                  @media screen and (max-width: 767px) {
                      &::after {
@@ -73,17 +64,18 @@
                      }
                  }
 }
+.navigation__list .link-current::after {
+    content: '';
+    display: block;
+    @include sizes (100%, 4px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    background-color: $accent-color;
+}
 
 // .navigation__list .navigation__item:not(:last-child) {
 //     margin-right: 50px;
 // }
-// .navigation__list .link-current::after {
-//     content: '';
-//     display: block;
-//     @include sizes (100%, 4px);
-//     position: absolute;
-//     bottom: 0;
-//     left: 0;
-//     border-radius: 2px;
-//     background-color: $accent-color;
-// }
+

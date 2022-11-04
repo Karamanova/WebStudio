@@ -25,19 +25,22 @@ margin-bottom: 64px;
     color: $accent-color;
     }
 }
-
-.contacts__item:not(:last-child) {
-    margin-bottom: 32px;
-
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 10px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        margin-bottom: 0;
-        margin-right: 50px;
-    }
+.contacts__item {
+    display: flex;
+    &:not(:last-child) {
+            margin-bottom: 32px;
+    
+            @media screen and (min-width: $tablet) {
+                margin-bottom: 10px;
+            }
+    
+            @media screen and (min-width: $desktop) {
+                margin-bottom: 0;
+                margin-right: 50px;
+            }
+        }
 }
+
 
 .contacts__icon {
 display: none;

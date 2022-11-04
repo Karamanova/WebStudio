@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     margin: -8px;
     margin-bottom: 32px;
+    justify-content: flex-start;
     
         @media screen and (min-width:$tablet) {
             justify-content: center;
