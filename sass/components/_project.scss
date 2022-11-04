@@ -1,9 +1,15 @@
+.project {
+    padding-bottom: 60px;
+    @media screen and (min-width:$desktop) {
+            padding-bottom: 94px;
+        }
+}
 .project__list {
     @media screen and (min-width:$tablet) {
             margin-top: 30px;
             display: flex;
-                flex-wrap: wrap;
-                margin: -15px;
+            flex-wrap: wrap;
+            margin: -15px;
         }
 }
 
