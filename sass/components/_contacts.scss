@@ -71,7 +71,7 @@ display: none;
         }
     
         @media screen and (min-width:$desktop) {
-            @include font (14px, 1.33, 0.02em, 500);
+            @include font (14px, 500, 1.33, 0.02em);
         }
 }
 

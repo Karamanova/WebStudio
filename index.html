@@ -21,6 +21,49 @@
             height="16">
             <use href="./images/icons.svg#icon-menu" class="icon-menu"></use>
         </svg></button>
+        <!-- Мобильное меню -->
+        
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button type="button" class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu"><svg
+                    width="24" height="16">
+                    <use href="./images/icons.svg#icon-close" class="icon-close"></use>
+                </svg></button>
+            <div class="menu-content">
+                <div class="menu-nav">
+                    <nav>
+                        <ul class="mobile-nav list">
+                            <li class="mobile-nav__item"><a href="./index.html"
+                                    class="mobile-nav__link mobile-nav__link--current link">Студія</a></li>
+                            <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link link">Портфоліо</a>
+                            </li>
+                            <li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        
+                <div class="menu-contacts">
+                    <ul class="contacts-list list">
+                        <li class="contacts-list__item">
+                            <a href="tel:+380961111111"
+                                class="contacts-list__link contacts-list__link--big-size link contacts__link--accent-color">+38
+                                096
+                                111 11
+                                11</a>
+                        </li>
+                        <li class="contacts-list__item">
+                            <a href="mailto:info@devstudio.com"
+                                class="contacts-list__link contacts-list__link--medium-size link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-social list">
+                        <li class="mobile-social__item"><a href="" class="mobile-social__link">Instagram</a></li>
+                        <li class="mobile-social__item"><a href="" class="mobile-social__link">Twitter</a></li>
+                        <li class="mobile-social__item"><a href="" class="mobile-social__link">Facebook</a></li>
+                        <li class="mobile-social__item"><a href="" class="mobile-social__link">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
     <nav class="navigation">
     <ul class="navigation__list list">
         <li class="navigation__item"> <a href="./index.html" class="link-current">Студія</a></li>
@@ -111,17 +154,29 @@
     <div class="container">
     <h2 class="about__name">Чим ми займаємося</h2>
     <ul class="about__list list">
-        <li class="about__item"><img src="./images/keyboard.jpg" alt="створення коду за макетом" width="370">
+        <li class="about__item">
+            <picture>
+                <source srcset="./images/desktop/about1.jpg 1x, ./images/desktop/about2@2x.jpg 2x" media="(min-width:1200px)">
+                <img src="./images/desktop/about1.jpg" alt="створення коду за макетом">
+            </picture>
             <div class="about__direction">
             <p class="about__text">десктопні додатки</p>
         </div>
     </li>
-        <li class="about__item"><img src="./images/cellphone.jpg" alt="виконання UX/UI дизайну" width="370">
+        <li class="about__item">
+            <picture>
+                <source srcset="./images/desktop/about2.jpg 1x, ./images/desktop/about2@2x.jpg 2x" media="(min-width:1200px)">
+                <img src="./images/desktop/about2.jpg" alt="виконання UX/UI дизайну">
+            </picture>
             <div class="about__direction">
             <p class="about__text">мобільні додатки</p>
         </div>
     </li>
-        <li class="about__item"><img src="./images/rgb.jpg" alt="підбір кольору за допомогою RGB" width="370">
+        <li class="about__item">
+            <picture>
+                <source srcset="./images/desktop/about3.jpg 1x, ./images/desktop/about3@2x.jpg 2x" media="(min-width:1200px)">
+                <img src="./images/desktop/about3.jpg" alt="підбір кольору за допомогою RGB">
+            </picture>
             <div class="about__direction">
             <p class="about__text">дизайнерські рішення</p>
         </div>
@@ -138,7 +193,7 @@
             <source srcset="./images/desktop/teammate1.jpg 1x, ./images/desktop/teammate1@2x.jpg 2x" media="(min-width:1200px)">
             <source srcset="./images/tablet/teammate1.jpg 1x, ./images/tablet/teammate1@2x.jpg 2x" media="(min-width:768px)">
             <source srcset="./images/mobile/teammate1.jpg 1x, ./images/mobile/teammate1@2x.jpg 2x" media="(min-width:320px)">
-            <img class="team__img" src="./images/mobile/teammate1.jpg.jpg" alt="Ігор Дем'яненко" width="">
+            <img class="team__img" src="./images/mobile/teammate1.jpg" alt="Ігор Дем'яненко">
         </picture>
             <div class="team__description">
             <h3 class="team__names">Ігор Дем'яненко</h3>
@@ -183,7 +238,7 @@
                 media="(min-width:768px)">
             <source srcset="./images/mobile/teammate2.jpg 1x, ./images/mobile/teammate2@2x.jpg 2x"
                 media="(min-width:320px)">
-            <img class="team__img" src="./images/mobile/product_designer.jpg" alt="Ольга Рєпіна" width="">
+            <img class="team__img" src="./images/mobile/teammate2.jpg" alt="Ольга Рєпіна">
         </picture>
         <div class="team__description">
         <h3 class="team__names">Ольга Рєпіна</h3>
@@ -225,7 +280,7 @@
             <source srcset="./images/desktop/teammate3.jpg 1x, ./images/desktop/teammate3@2x.jpg 2x" media="(min-width:1200px)">
             <source srcset="./images/tablet/teammate3.jpg 1x, ./images/tablet/teammate3@2x.jpg 2x" media="(min-width:768px)">
             <source srcset="./images/mobile/teammate3.jpg 1x, ./images/mobile/teammate3@2x.jpg 2x" media="(min-width:320px)">
-            <img class="team__img" src="./images/mobile/product_designer.jpg" alt="Микола Тарасов" width="">
+            <img class="team__img" src="./images/mobile/teammate3.jpg" alt="Микола Тарасов">
         </picture>
         <div class="team__description">
         <h3 class="team__names">Микола Тарасов</h3>
@@ -267,7 +322,7 @@
             <source srcset="./images/desktop/teammate4.jpg 1x, ./images/desktop/teammate4@2x.jpg 2x" media="(min-width:1200px)">
             <source srcset="./images/tablet/teammate4.jpg 1x, ./images/tablet/teammate4@2x.jpg 2x" media="(min-width:768px)">
             <source srcset="./images/mobile/teammate4.jpg 1x, ./images/mobile/teammate4@2x.jpg 2x" media="(min-width:320px)">
-            <img class="team__img" src="./images/mobile/product_designer.jpg" alt="Михайло Єрмаков" width="">
+            <img class="team__img" src="./images/mobile/teammate3.jpg" alt="Михайло Єрмаков">
         </picture>
         <div class="team__description">
         <h3 class="team__names">Михайло Єрмаков</h3>
@@ -426,55 +481,6 @@
         </div>
         </div>
     </footer>
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <button type="button" class="toggle-menu js-close-menu" aria-expanded="false" aria-controls="mobile-menu"><svg
-                width="24" height="16">
-                <use href="./images/icons.svg#icon-close" class="icon-close"></use>
-            </svg></button>
-        <!-- Мобильное меню -->
-        
-        <div class="menu-container js-menu-container" id="mobile-menu">
-            <button type="button" class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu"><svg
-                    width="24" height="16">
-                    <use href="./images/icons.svg#icon-close" class="icon-close"></use>
-                </svg></button>
-            <div class="menu-content">
-                <div class="menu-nav">
-                    <nav>
-                        <ul class="mobile-nav list">
-                            <li class="mobile-nav__item"><a href="./index.html"
-                                    class="mobile-nav__link mobile-nav__link--current link">Студия</a></li>
-                            <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link link">Портфолио</a>
-                            </li>
-                            <li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
-        
-                <div class="menu-contacts">
-                    <ul class="contacts-list list">
-                        <li class="contacts-list__item">
-                            <a href="tel:+380961111111"
-                                class="contacts-list__link contacts-list__link--big-size link contacts__link--accent-color">+38
-                                096
-                                111 11
-                                11</a>
-                        </li>
-                        <li class="contacts-list__item">
-                            <a href="mailto:info@devstudio.com"
-                                class="contacts-list__link contacts-list__link--medium-size link">info@devstudio.com</a>
-                        </li>
-                    </ul>
-                    <ul class="mobile-social list">
-                        <li class="mobile-social__item"><a href="" class="mobile-social__link">Instagram</a></li>
-                        <li class="mobile-social__item"><a href="" class="mobile-social__link">Twitter</a></li>
-                        <li class="mobile-social__item"><a href="" class="mobile-social__link">Facebook</a></li>
-                        <li class="mobile-social__item"><a href="" class="mobile-social__link">LinkedIn</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
         <!-- Модальное окно  -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
