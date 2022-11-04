@@ -1,0 +1,27 @@
+.mobile-social {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mobile-social__item {
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    @media screen and (max-width: 479px) {
+        margin-bottom: 10px;
+    }
+}
+
+.mobile-social__link {
+    color: $accent-color;
+    text-decoration: none;
+
+    border-right: 1px solid rgba($title-color, 0.2);
+    transform: rotate(90deg);
+    padding-right: 10px;
+}

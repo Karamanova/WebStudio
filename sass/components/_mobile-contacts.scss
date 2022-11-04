@@ -1,0 +1,97 @@
+// .contacts-list {
+//     margin-bottom: 64px;
+
+//     @media screen and (min-width:$tablet) {
+//         margin-bottom: 0;
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     @media screen and (min-width:$desktop) {
+//         flex-direction: row;
+//         align-items: center;
+//     }
+// }
+
+// .contacts-list__link {
+//     display: flex;
+//     align-items: center;;
+//     @include font (12px, 500, 1.16, 0.02em);
+//     color: $contacts-list-color;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//         color: $accent-color;
+//     }
+
+//     @media screen and (min-width:$desktop) {
+//         @include font (14px, 1.33, 0.02em, 500);
+//     }
+// }
+
+// .contacts-list__item:not(:last-child) {
+//     margin-bottom: 32px;
+
+//     @media screen and (min-width: $tablet) {
+//         margin-bottom: 10px;
+//     }
+
+//     @media screen and (min-width: $desktop) {
+//         margin-bottom: 0;
+//         margin-right: 50px;
+//     }
+// }
+
+// .contacts-list__icon {
+//     display: none;
+
+//     @media screen and (min-width:$tablet) {
+//         display: block;
+//         fill: currentColor;
+//         margin-right: 10px;
+//     }
+
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover {
+//         fill: $accent-color;
+//     }
+// }
+
+// .contacts-list__icon--envelope {
+//     @media screen and (min-width: $tablet) {
+//         width: 14px;
+//         height: 10px;
+//     }
+// }
+
+// .contacts-list__icon--phone {
+//     @media screen and (min-width: $tablet) {
+//         width: 10px;
+//         height: 14px;
+//     }
+// }
+
+.contacts-list__link--big-size {
+    @include font (34px, 1.22, 0.02em, 500);
+
+    @media screen and (max-width: 479px) {
+        font-size: 27px;
+    }
+}
+
+.contacts__link--accent-color {
+    color: $accent-color;
+}
+
+.contacts-list__link--medium-size {
+    color: $contacts-list-color;
+    font-size: 24px;
+}
+
+.contacts__icon {
+    margin-right: 10px;
+
+    fill: currentColor;
+}
