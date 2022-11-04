@@ -4,10 +4,8 @@
 }
 
 .mobile-social__item {
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    font-weight: 500;
-
+    @include font (18px, 500, 1.22, 0.02em);
+    
     &:not(:last-child) {
         margin-right: 10px;
     }
