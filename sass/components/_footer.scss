@@ -12,11 +12,9 @@
     @media screen and (min-width:$tablet) {
             display: flex;
             flex-wrap: wrap;
-            // justify-content: space-around;
         }
     
         @media screen and (min-width:$desktop) {
-            // justify-content: space-between;
             align-items: baseline;
         }
 }
@@ -47,6 +45,3 @@
 .footer__item:not(:first-child) {
     margin-top: 9px;
 }
-// .footer__item+.footer__item {
-//     margin-top: 9px;
-// }
