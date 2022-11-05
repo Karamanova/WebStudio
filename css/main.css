@@ -302,11 +302,6 @@ img {
 .subscribe {
   margin-top: 60px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .subscribe {
-    margin: 60px auto;
-  }
-}
 @media screen and (min-width: 1200px) {
   .subscribe {
     margin-left: auto;
@@ -849,8 +844,9 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -8px;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
+  margin-top: -8px;
+  margin-left: -8px;
 }
 @media screen and (min-width: 768px) {
   .filters__list {
@@ -860,11 +856,19 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters__list {
+    margin-bottom: 32px;
   }
 }
 
 .filters__item {
-  margin: 8px;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-bottom: 8px;
 }
 
 .filters-btn {
@@ -907,6 +911,9 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
