@@ -13,13 +13,14 @@
     @media screen and (max-width: 479px) {
         margin-bottom: 10px;
     }
+&::after {
+position: absolute;
 }
+}
+
 
 .mobile-social__link {
     color: $accent-color;
     text-decoration: none;
-
-    border-right: 1px solid rgba($title-color, 0.2);
-    transform: rotate(90deg);
     padding-right: 10px;
 }

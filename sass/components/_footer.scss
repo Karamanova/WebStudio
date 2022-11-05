@@ -12,11 +12,11 @@
     @media screen and (min-width:$tablet) {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            // justify-content: space-around;
         }
     
         @media screen and (min-width:$desktop) {
-            justify-content: space-between;
+            // justify-content: space-between;
             align-items: baseline;
         }
 }

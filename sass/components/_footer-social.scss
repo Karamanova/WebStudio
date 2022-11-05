@@ -4,8 +4,14 @@
         }
     
         @media screen and (min-width: $desktop) {
-            margin-left: 70px;
+            margin-right: 0, auto;
         }
+}
+.footer__address {
+    @media screen and (min-width: $tablet) {
+            margin-right: auto;
+        }
+   
 }
 
 .footer-social__title {

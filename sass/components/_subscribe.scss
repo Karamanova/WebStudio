@@ -1,9 +1,12 @@
 .subscribe {
+    @media screen and (min-width:$tablet) {
+            margin: auto;
+            
+    }
     @media screen and (max-width:1199px) {
             margin-top: 60px;
         }
-    }
-
+}
 .subscribe__text {
     font-size: 14px;
     line-height: 1.14;
